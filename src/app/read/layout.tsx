@@ -23,12 +23,7 @@ export default function ReadLayout({ children }: { children: React.ReactNode }) 
       </div>
 
       {/* Main */}
-      <main className={clsx(
-        'h-screen overflow-y-auto',
-        'w-full p-4',
-      )}>
-        {children}
-      </main>
+      {children}
 
       {/* Shuffle */}
       <ShuffleButton />

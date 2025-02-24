@@ -46,19 +46,21 @@ export default function Sidebar() {
   }
 
   return (
-    <div 
-      className={clsx(
-        'fixed top-0 left-0 h-16 w-16 z-10 m-4',
-        'cursor-pointer',
-      )}
-      onClick={handleClick}
-    >
-      {!isReaderSidebarOpen && <SidebarIcon />}
+    <>
+      <div 
+        className={clsx(
+          'fixed top-0 left-0 h-16 w-16 z-10 m-6',
+          'cursor-pointer',
+        )}
+        onClick={handleClick}
+      >
+        {!isReaderSidebarOpen && <SidebarIcon />}
+      </div>
       <ReaderSidebar 
         isOpen={isReaderSidebarOpen}
         onClose={() => setIsReaderSidebarOpen(false)}
       />
-    </div>
+    </>
   );
 
 }

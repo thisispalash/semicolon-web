@@ -43,7 +43,7 @@ export default function ShuffleButton() {
       } as React.CSSProperties}
       className={cn(
         'h-20 w-20 p-2',
-        'fixed right-0 bottom-0 m-4',
+        'fixed right-0 bottom-0 m-6',
         'flex items-center justify-center',
         'transition-all duration-200',
         'text-[var(--shuffle-color)] hover:text-[var(--shuffle-hover-color)]',
